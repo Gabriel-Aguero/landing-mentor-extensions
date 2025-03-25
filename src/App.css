@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
+:root {
+  --color-theme-french-mauve: oklch(67.65% 0.1539 329.18);
+  --color-neutral-900: oklch(22.7% 14% 14%);
+  --color-neutral-800: oklch(22.6% 25% 17%);
+  --color-neutral-700: oklch(22.5% 23% 24%);
+  --color-neutral-600: oklch(22.6% 11% 37%);
+  --color-neutral-300: oklch(0% 0% 78%);
+  --color-neutral-200: oklch(21.7% 61% 90%);
+  --color-neutral-100: oklch(0% 0% 93%);
+  --color-neutral-0: oklch(200% 60% 99%);
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url(https://fonts.google.com/noto/specimen/Noto+Sans);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url(https://fonts.google.com/noto/specimen/Noto+Sans);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url(https://fonts.google.com/noto/specimen/Noto+Sans);
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "Noto Sans";
+  font-size: 16px;
+}
